@@ -2,10 +2,9 @@
 
 namespace App\Libraries;
 
-define('DOMPDF_ENABLE_AUTOLOAD', false);
-require_once VENDOR_DIR . DS . 'dompdf' . DS . 'dompdf' . DS . 'dompdf_config.inc.php';
+use Dompdf\Dompdf;
 
-class Pdf extends \DOMPDF
+class Pdf extends DOMPDF
 {
     function __construct()
     {
