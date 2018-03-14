@@ -1,19 +1,19 @@
 <?php
 
-// we get an Error for DEV_MODE if not loaded here
-if (file_exists(SYS_DIR . DS . '../..' . DS . 'inc/inc.php')) {
+if (! defined('DS')) {
+    define('DS', DIRECTORY_SEPARATOR);
+}
 
-    require_once(SYS_DIR . DS . '../..' . DS . 'inc/inc.php');
+// we get an Error for DEV_MODE if not loaded here
+if (file_exists(__DIR__ . DS . '../..' . DS . 'inc/inc.php')) {
+
+    require_once(__DIR__ . DS . '../..' . DS . 'inc/inc.php');
 } else {
 
     die("Fatal Error: System inc file not found!");
 }
 
 // just in case something goes wrong
-if (! defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
-
 if (! defined('SYS_DIR')) {
     define('SYS_DIR', dirname(__FILE__));
 }
