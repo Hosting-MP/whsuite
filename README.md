@@ -1,4 +1,4 @@
-# whsuite
+# WHsuite
 The main WHSuite app.  
 
 ## Requirements
