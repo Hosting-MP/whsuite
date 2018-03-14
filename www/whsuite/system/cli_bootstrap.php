@@ -31,6 +31,14 @@ if (file_exists(VENDOR_DIR . DS . 'autoload.php')) {
 // -------------------------------------------------------------------
 // setup error reporting
 // -------------------------------------------------------------------
+if (file_exists(__DIR__ . DS . '../..' . DS . 'inc/inc.php')) {
+
+    require_once(__DIR__ . DS . '../..' . DS . 'inc/inc.php');
+} else {
+
+    die("Fatal Error: System inc file not found!");
+}
+
 if (defined('DEV_MODE') && DEV_MODE) {
 
     error_reporting(E_ALL);
