@@ -1,4 +1,5 @@
 # whsuite
-The main WHSuite app.
+The main WHSuite app.  
 
-Please see README.html for full instructions.
+## Requirements
+This was forked to make WHsuite PHP7 compatible and use more uptodate packagists.
