@@ -41,13 +41,13 @@
         "whsuite/composer-installer": "1.*",
         "whsuite/purchase-data": "1.*",
 
-        "dompdf/dompdf": "0.6.2",
+        "dompdf/dompdf": "0.8.2",
         "phpseclib/phpseclib": "0.3.5",
         "giggsey/libphonenumber-for-php": "7.*",
         "keboola/csv": "1.1.*",
         "patchwork/utf8": "1.1.*",
         "naneau/semver": "0.*",
-        "filp/whoops": "1.*",
+        "filp/whoops": "2.*",
 
         "whsuite/addon-authorizenet": "1.*",
         "whsuite/addon-cpanel": "1.*",
