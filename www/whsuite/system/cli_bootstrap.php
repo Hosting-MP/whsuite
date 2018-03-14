@@ -1,14 +1,38 @@
 <?php
 
+// we get an Error for DEV_MODE if not loaded here
+if (file_exists(SYS_DIR . DS . '../..' . DS . 'inc/inc.php')) {
+
+    require_once(SYS_DIR . DS . '../..' . DS . 'inc/inc.php');
+} else {
+
+    die("Fatal Error: System inc file not found!");
+}
+
+// just in case something goes wrong
 if (! defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
 }
 
-define('SYS_DIR', dirname(__FILE__));
-define('APP_DIR', SYS_DIR . DS . '..' . DS . 'app');
-define('ADDON_DIR', APP_DIR . DS . 'addons');
-define('STORAGE_DIR', APP_DIR . DS . 'storage');
-define('VENDOR_DIR', SYS_DIR . DS . '..' . DS . 'vendor');
+if (! defined('SYS_DIR')) {
+    define('SYS_DIR', dirname(__FILE__));
+}
+
+if (! defined('APP_DIR')) {
+    define('APP_DIR', SYS_DIR . DS . '..' . DS . 'app');
+}
+
+if (! defined('ADDON_DIR')) {
+    define('ADDON_DIR', APP_DIR . DS . 'addons');
+}
+
+if (! defined('STORAGE_DIR')) {
+    define('STORAGE_DIR', APP_DIR . DS . 'storage');
+}
+
+if (! defined('VENDOR_DIR')) {
+    define('VENDOR_DIR', SYS_DIR . DS . '..' . DS . 'vendor');
+}
 
 // -------------------------------------------------------------------
 // load registry
@@ -35,14 +59,6 @@ if (file_exists(VENDOR_DIR . DS . 'autoload.php')) {
 // -------------------------------------------------------------------
 // setup error reporting
 // -------------------------------------------------------------------
-if (file_exists(SYS_DIR . DS . '../..' . DS . 'inc/inc.php')) {
-
-    require_once(SYS_DIR . DS . '../..' . DS . 'inc/inc.php');
-} else {
-
-    die("Fatal Error: System inc file not found!");
-}
-
 if (defined('DEV_MODE') && DEV_MODE) {
 
     error_reporting(E_ALL);
