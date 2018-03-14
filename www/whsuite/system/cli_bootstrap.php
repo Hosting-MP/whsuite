@@ -1,5 +1,9 @@
 <?php
 
+if (! defined('DS')) {
+    define('DS', DIRECTORY_SEPARATOR);
+}
+
 define('SYS_DIR', dirname(__FILE__));
 define('APP_DIR', SYS_DIR . DS . '..' . DS . 'app');
 define('ADDON_DIR', APP_DIR . DS . 'addons');
