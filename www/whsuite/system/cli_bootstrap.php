@@ -98,11 +98,6 @@ App::factory('\Core\Configs', APP_DIR . DS . 'configs');
 App::factory('\Core\Hooks');
 
 // -------------------------------------------------------------------
-// register addons configs / routes (if any exist)
-// -------------------------------------------------------------------
-App::registerAddons();
-
-// -------------------------------------------------------------------
 // load db config / init db/orm
 // -------------------------------------------------------------------
 $db_config = App::get('configs')->get('database.mysql');
@@ -129,6 +124,11 @@ $capsule->setAsGlobal();
 // register models (main and addons)
 // -------------------------------------------------------------------
 App::get('autoloader')->registerModels();
+
+// -------------------------------------------------------------------
+// register addons configs / routes (if any exist)
+// -------------------------------------------------------------------
+App::registerAddons();
 
 // -------------------------------------------------------------------
 // start router
