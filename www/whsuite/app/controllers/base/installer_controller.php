@@ -30,8 +30,8 @@ class InstallerController extends AppController
     public $parser;
     public $compare;
     public $migrations;
-    public $min_php_version = '5.3.7';
-    public $min_recommended_php_version = '5.5';
+    public $min_php_version = '5.6.34';
+    public $min_recommended_php_version = '7.0;
 
     public $required_extension = array();
     public $recommended_extensions = array();
