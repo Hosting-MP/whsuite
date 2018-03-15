@@ -42,7 +42,7 @@
         "whsuite/purchase-data": "1.*",
 
         "dompdf/dompdf": "0.8.2",
-        "phpseclib/phpseclib": "2.0.10",
+        "phpseclib/phpseclib": "1.0.10",
         "giggsey/libphonenumber-for-php": "8.*",
         "keboola/csv": "1.1.*",
         "patchwork/utf8": "1.3.*",
