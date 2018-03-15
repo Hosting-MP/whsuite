@@ -3,7 +3,7 @@
 date_default_timezone_set('UTC');
 
 // Version that will be installed
-define('INSTALL_VERSION', '1.2.0');
+define('INSTALL_VERSION', '1.2.1');
 
 if (! defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
