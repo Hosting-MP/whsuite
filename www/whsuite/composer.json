@@ -1,8 +1,8 @@
 {
-    "name": "whsuite/whsuite",
+    "name": "Hosting-MP/whsuite",
     "description": "Web Hosting Suite",
     "license": "MIT",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "authors": [
         {
             "name": "Mike Barlow",
@@ -11,6 +11,10 @@
         {
             "name": "Ricky Mills",
             "email": "rick@whsuite.com"
+        },
+        {
+            "name": "Hosting-MP.de",
+            "email": "info@hosting-mp.com"
         }
     ],
 
